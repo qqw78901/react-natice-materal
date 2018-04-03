@@ -12,6 +12,9 @@ import {
   View
 } from 'react-native';
 
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -33,6 +36,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Icon name="rocket" size={30} color="#900" />
       </View>
     );
   }
